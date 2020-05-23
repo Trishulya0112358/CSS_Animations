@@ -1,0 +1,141 @@
+body{
+    font-family: 'Lato',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+}
+
+.caption{
+    flex-direction: column;
+    color:white;
+    font-size: 28px;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #272727;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    height:700px;
+    width:700px;
+    position: relative;
+    overflow: hidden;
+}
+img{
+    top: 0;
+    left: 0;
+    height:700px;
+    width:700px;
+    
+    transition: all 1s;
+}
+
+.container:hover .img1{
+    transform: rotateZ(30deg) scale(1.5);
+}
+
+.container:hover .caption{
+    opacity: 1;
+    background: rgba(0,0,0,0.5);
+}
+
+.img2{
+    top: 100px;
+    left: 100px;
+    height:700px;
+    width:700px;
+    transition: all 1s;
+    overflow: hidden;
+
+}
+
+
+.container2{
+    height:700px;
+    width:700px;
+    top:0;
+    left:100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.caption2{
+    flex-direction: column;
+    color:white;
+    font-size: 28px;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #272727;
+    opacity: 0.5;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:-700px;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container2:hover .img2{
+    transform: rotateZ(-30deg) scale(1.5);
+}
+
+.container2:hover .caption2{
+    transform: translateX(700px);
+}
+
+.img3{
+    transition: all 1s;
+    overflow: hidden;
+
+}
+
+
+.container3{
+    height:700px;
+    width:700px;
+    top:0;
+    left:200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.caption3{
+    flex-direction: column;
+    color:white;
+    font-size: 28px;
+    text-transform: capitalize;
+    width: 100%;
+    background-color: #272727;
+    opacity: 1;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:-700px;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container3:hover .caption3{
+    transform: translateX(700px);
+}
+
+.container3:hover .img3{
+    transform: translateX(700px);
+}

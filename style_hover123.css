@@ -1,0 +1,119 @@
+.one{
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two{
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.three{
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a{
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    border: 6px solid #272727;
+    position: relative;
+    padding: 40px 80px;
+    font-size: 45px;
+    overflow: hidden;
+    transition: color 1s;
+
+}
+
+.this:before{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: #272727;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.this:hover:before{
+    transform: rotateX(90deg);
+}
+
+.this:after{
+    content:'';
+    width:100%;
+    height:100%;
+    background-color: #272727;
+    position: absolute;
+    left:0;
+    top:0;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.this:hover:after{
+    transform: rotateY(90deg);
+}
+
+
+.this:hover{
+    color: #272727;
+}
+
+.this2{
+    color: #272727;
+}
+
+.this2:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff200;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: rotate(-90deg);
+    transition: transform 1s;
+}
+
+.this2:hover:before{
+    transform:rotate(0deg);
+}
+
+.this3{
+    color: #272727;
+}
+
+.this3:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: purple;
+    height: 100%;
+    width: 100.5%;
+    z-index: -1;
+    transform: translateX(-360px);
+    transition: transform 1s, color 1s;
+}
+
+.this3:hover:before{
+    transform:translateX(-1px);
+}
+
+.this3:hover{
+    color:white;
+}
